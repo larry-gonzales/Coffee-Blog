@@ -1,0 +1,344 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+/* * {
+    outline: 1px solid magenta;
+} */
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* =================
+     TYPOGRAPHY
+================= */
+
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #8B4513;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 700;
+    color: #444;
+}
+
+a {
+    color: #8B4513;
+}
+
+a:hover,
+a:focus {
+    color: #8B4513;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* =================
+       LAYOUT
+================= */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background: #ffebcd;
+    padding: 2em 0;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+/* navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav li {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 1.5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8B4513;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    opacity: 0.65;
+    font-weight: 700;
+}
+
+.current-page {
+    border-bottom: 1px solid #8B4513;
+}
+
+.current-page:hover {
+    color: #8B4513;
+}
+
+/* h1 subtitle */
+.subtitle {
+    font-weight: 700;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.23rem;
+    color: #8B4513;
+    margin: 0;
+}
+
+/* articles */
+.article-subtitle {
+    font-size: 1.5rem;
+    margin-top: 1.5em;
+}
+
+.article-copy {
+    line-height: 1.5;
+    color: #707070;
+}
+
+.article-image {
+    width: 100%;
+    height: 242px;
+    object-fit: cover;
+    order: -2;
+}
+
+.article-featured {
+    border-bottom: 1px solid #8B4513;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-read-more,
+.article-info {
+    font-size: .875rem;
+}
+
+.article-read-more {
+    color: #8B4513;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    font-weight: 700;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {;
+    text-decoration: underline;
+}
+
+.article-info {
+    margin: 2em 0;
+    order: -1;
+}
+
+.article-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.article-recent-col1 {
+    order: 2;
+}
+
+.article-recent-col2 {
+    order: 1;
+}
+
+/* About me page */
+.about-image {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 3em;
+}
+
+/* Sidebar widgets */
+.sidebar-widget {
+    border: 20px solid #ffebcd;
+    margin-bottom: 1em;
+    padding: 1em;
+    flex-direction: column;
+}
+
+.widget-recent-post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #8B4513;
+    margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child {
+    border-bottom: 0;
+    margin: 0;
+}
+
+.widget-image {
+    order: -1;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.about-widget-image {
+    object-position: top;
+}
+
+.widget-title,
+.widget-post-title {
+    font-size: 1rem;
+    margin-bottom: 1em;
+    color: #8B4513;
+}
+
+.widget-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.225rem;
+}
+
+.widget-copy {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #707070;
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    margin-top: 2em;
+    padding: 3em 0;
+    background: #8B4513;
+    color: #fff;
+    text-align: center;
+}
+
+.blurb,
+.copyright {
+    margin: 0;
+    padding: 0.125em;
+    opacity: 0.75;
+}
+
+.blurb {
+    font-weight: 700;
+}
+
+/* =================
+     TWO COLUMNS
+================= */
+/* Medium Devices */
+/* @media (Min-widthmax-width: 870px) */
+
+/* Desktop */
+@media (min-width: 870px) {
+
+    /* Layout */
+    .container-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-center;
+    }
+    
+    main {
+        width: 70%;
+    }
+    
+    aside {
+        width: 25%;
+        min-width: 200px;
+        margin-left: 1em;
+    }
+
+    /* Header */
+    header {
+        padding: 3em 0;
+    }
+
+    /* Navigation */
+    .nav-menu {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-item {
+        margin: 0 0 0 2em;
+    }
+
+    /* articles */
+    .article-featured {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-image {
+        order: -2;
+        min-height: 250px;
+        object-fit: cover;
+    }
+
+    .featured-image {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .article-info {
+        order: -1;
+        margin: 1.5em 0;
+    }
+    
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-col1 {
+        width: 67%;
+    }
+
+    .article-recent-col2 {
+        width: 30%;
+    }
+}
